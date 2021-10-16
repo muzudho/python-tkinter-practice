@@ -61,6 +61,7 @@ right_text_area.place(x=270*scale, y=50*scale,
 def copy_left_to_right():
     """左のテキストボックスの内容を、右のテキストボックスにコピーする機能"""
     global left_text_area, right_text_area
+    right_text_area.delete('1.0', 'end')
     text = left_text_area.get("1.0", 'end-1c')
     right_text_area.insert("1.0", text)
 
@@ -68,6 +69,7 @@ def copy_left_to_right():
 def copy_right_to_left():
     """右のテキストボックスの内容を、左のテキストボックスにコピーする機能"""
     global right_text_area, left_text_area
+    left_text_area.delete('1.0', 'end')
     text = right_text_area.get("1.0", 'end-1c')
     left_text_area.insert("1.0", text)
 
