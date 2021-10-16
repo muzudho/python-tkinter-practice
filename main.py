@@ -63,8 +63,13 @@ def copy_left_to_right():
     global left_text_area, right_text_area
     text = left_text_area.get("1.0", 'end-1c')
     right_text_area.insert("1.0", text)
-    #right_text_area.insert("1.0", "あいうえお\nかきくけこ")
-    #right_text_area.insert("END", text)
+
+
+def copy_right_to_left():
+    """右のテキストボックスの内容を、左のテキストボックスにコピーする機能"""
+    global right_text_area, left_text_area
+    text = right_text_area.get("1.0", 'end-1c')
+    left_text_area.insert("1.0", text)
 
 
 # [-->]ボタン
@@ -73,7 +78,8 @@ left_to_right_button = ttk.Button(
 left_to_right_button.place(x=220*scale, y=160*scale,
                            width=40*scale, height=30*scale)
 # [<--]ボタン
-right_to_left_button = ttk.Button(window, text='<--')
+right_to_left_button = ttk.Button(
+    window, text='<--', command=copy_right_to_left)
 right_to_left_button.place(x=220*scale, y=210*scale,
                            width=40*scale, height=30*scale)
 
