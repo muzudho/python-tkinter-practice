@@ -17,3 +17,5 @@ main.py
 📖 [Tkinter、Textウィジェットの使い方](https://blog.narito.ninja/detail/100/)  
 📖 [【Python】tkinterのplace()を使ってウィジェットを配置する！](https://flytech.work/blog/20076/)  
 📖 [【Python tkinter】ドロップダウンリスト（プルダウン）を表示：Comboboxウィジェット](https://office54.net/python/tkinter/ttk-combobox-widget)  
+📖 [How can I create a dropdown menu from a List in Tkinter?](https://stackoverflow.com/questions/45441885/how-can-i-create-a-dropdown-menu-from-a-list-in-tkinter)  
+📖 [Tkinter Button](https://python.keicode.com/advanced/tkinter-widget-button.php)  
